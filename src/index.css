@@ -68,3 +68,25 @@ textarea {
 .clearBtn:disabled {
   background-color: #858585;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90vw;
+    margin: 20px;
+  }
+
+  .clearBtn {
+    margin-bottom: 20px;
+  }
+
+  .results {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .results p {
+    width: 100%;
+  }
+
+}
