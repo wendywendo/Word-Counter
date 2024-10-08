@@ -8,10 +8,8 @@ function App() {
   useEffect(() => {
     setCharacters(sentences.length);
 
-    if (sentences.length > 0) {
-      const array = sentences.trim().split(/\s+/);
-      setWords(array.length);
-    }
+    const array = sentences.trim().split(/\s+/);
+    setWords(array.length);
   }, [sentences, words]);
 
   return (
@@ -37,7 +35,7 @@ function App() {
 
       <div className="results">
         <p>Character: { characters }</p>
-        <p>Word: { words }</p>
+        <p>Word: { sentences.length > 0 ? words : 0 }</p>
       </div>
 
     </main>
