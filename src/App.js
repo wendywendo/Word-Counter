@@ -14,7 +14,7 @@ function App() {
 
   return (
     <main>
-      <h1>Word Counter</h1>
+      <h1>Word Counter Project</h1>
       <p className="tagName">Free online character and word count tool.</p>
 
       <textarea
